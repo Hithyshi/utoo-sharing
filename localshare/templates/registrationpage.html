@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>
+
+<h1>Your route</h1>
+<form action="/createsharable/" method="POST">
+{% csrf_token %}
+  Pickup point:<br>
+  <input type="text" name="pickup" >
+  <br>
+  Drop point:<br>
+  <input type="text" name="drop" >
+  <br><br>
+  Pickup time:<br>
+  <input type="text" name="time" >
+  <br>
+  <input type="submit" value="SignUp">
+</form> 
+</center>
+
+</body>
+</html>

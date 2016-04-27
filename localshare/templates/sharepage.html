@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap core CSS -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Fontawesome CDN -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Loading custom fonts -->
+	
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	
+	<style>
+		/* Generic Styles */
+		html {
+			background:;
+		}
+		body {
+			-webkit-font-smoothing: antialiased;
+			line-height: 1.6em;
+			color: #FFFFFF;
+			font-family: 'Helvetica Neue' , Helvetica, Arial, sans-serif; font-weight: normal;
+			background:;
+			font-size:16px;
+		}
+
+		a {
+			-webkit-transition: all 0.2s linear;
+			-moz-transition: all 0.2s linear;
+			-o-transition: all 0.2s linear;
+			transition: all 0.2s linear;
+			color: #f05508;
+		}
+
+		a:hover {
+			text-decoration: underline;
+			color: #bd2200;
+		}
+    
+    .tagline{
+      margin-top:10px;
+    }
+    
+    .bottom-tagline{
+      margin-top:125px;
+    }
+
+		button {
+			-webkit-appearance: none;
+			cursor: pointer;
+			-webkit-transition: all .3s ease-out;
+			-moz-transition: all .3s ease-out;
+			-o-transition: all .3s ease-out;
+			transition: all .3s ease-out;
+		}
+
+		h1, h2, h3, h4 {
+			font-weight: bold;
+			font-family: 'Helvetica Neue' , Helvetica, Arial, sans-serif; font-weight: normal;
+		}
+
+
+		  img {
+		    display: block;
+		    height: auto;
+		    max-width: 100%;
+		  }
+
+		  div embed,
+		  div object,
+		  div iframe,
+		  p embed,
+		  p object,
+		  p iframe {
+		    max-width:100% !important;
+		  }
+
+		/* Headings */
+		h1, h2, h3, h4 {
+			line-height: 1.2em;
+			padding-top: 0.3em;
+		}
+		h1 {
+			font-size: 2.8em;
+			padding-top: 0;
+			margin-top: 0;
+			font-family: 'Helvetica Neue' , Helvetica, Arial, sans-serif; font-weight: normal;
+		}
+
+		h2 {
+			font-size: 1.6em;
+		}
+
+		h3 {
+			font-size: 1.4em;
+		}
+
+		h4 {
+			font-size: 1.2em;
+		}
+
+
+		/* Header */
+		.header {
+			background:#111111;
+      padding-top: 2em;
+			padding-bottom: 2em;
+      color: #FFFFFF;
+		}
+
+
+		/* Content */
+		.main-content {
+			position: relative;
+			background: url('//d1y0v6ricksqp.cloudfront.net/images/backgrounds/pictures/road_streaks_country.jpg') top center no-repeat;
+			background-size: cover;
+			min-height:85vh;
+		}
+
+		.signup {
+                /* Fallback for older browsers */
+          background: #111111;
+          background: rgba(17, 17, 17,0.9 ) ;   
+          -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90.0)";  
+
+		  padding: 1em 2em 2em;      
+      margin-top:100px;
+      color: #FFFFFF;
+      border-radius:3px;
+		}
+    
+    .signup h1, .signup h2, .signup h3, .signup h4, signup h5{
+      margin-top:5px;
+    }
+    
+    
+
+    .form-control, .btn{
+      border-radius:3px;
+      margin-bottom:5px;
+    }
+
+    .btn-primary, .btn-primary:focus {
+      color: #FFFFFF;
+      background-color: #f05508;
+      border-color:#f05508;
+    }
+    
+    .btn-primary:hover {
+      
+      background-color: #bd2200;
+      border-color:#bd2200;
+    }
+
+
+    .social_links {
+      -webkit-transition: all 0.15s ease-in-out;
+      -moz-transition: all 0.15s ease-in-out;
+      -ms-transition: all 0.15s ease-in-out;
+      -o-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+    }
+
+    .social_links a {
+      display:inline-block;
+      color: #f05508;
+      -webkit-transition: all 0.15s ease-in-out;
+      -moz-transition: all 0.15s ease-in-out;
+      -ms-transition: all 0.15s ease-in-out;
+      -o-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+    }
+
+	.social_links .facebook:hover {color: #3b5998;}
+	.social_links .twitter:hover {color: #00aced;}
+	.social_links .googleplus:hover {color: #dd4b39;}
+	.social_links .instagram:hover {color:#125688;}
+	.social_links .linkedin:hover {color: #007bb6;}
+	.social_links .youtube:hover {color: #CF3427;}
+	.social_links .pinterest:hover {color:#CB2028;}
+	.social_links .rss:hover {color: #fa9b39;}
+	.social_links .email:hover {color: #999;}
+  
+
+
+		.footer {
+			padding:4rem 0;
+			background:#111111;
+			color:#BABABA;
+		}
+
+		.footer p {
+			line-height:18px;
+			color:#BABABA;
+		}
+
+		#share_links a {
+			display:inline-block;
+		}
+
+
+		@media (max-height: 700px) {
+
+			.logo {
+			    margin-bottom: 1rem;
+			    margin-top: 1rem;
+			    width:13%;
+			}
+
+
+		}
+
+		/* Media Queries */
+		@media (max-width: 767px) {
+
+
+			.signup {
+				padding:1em 1em 2em;
+			}
+
+			.signup-text h1 {
+			    font-size: 27px;
+			}
+
+			.signup .btn {
+			    width: 100%;
+			}
+      
+      .main-content{
+        height:auto;
+      }
+      
+      .bottom-tagline{
+        margin-top:60px;
+        position:static;
+      }
+
+		}
+
+		@media (max-width: 480px) {
+
+		    h1 {
+		    	font-size:25px;
+		    }
+
+		    h2,
+		    .main-content .slogan_text h2 {
+		    	font-size:22px;
+		    }
+
+			h3 {
+			    font-size: 0.713em;
+			}
+
+
+			.signup-text h1 {
+			    font-size: 16px;
+			}
+
+		}
+
+		@media (min-width: 768px) {
+
+			.main-content .slogan_text,
+			.main-content .slogan_text h2 {
+			    font-size: 50px;
+			}
+		}
+
+		@media (min-width: 992px) {
+
+
+		}
+
+		@media (min-width: 1200px) {
+
+
+		}
+	</style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+              <title>{{ route }} with Utoo Your Daily commute</title>
+          <meta content="{{ route }} Daily travel to office with Utoo-Your Daily Commute" property="og:title">
+          <meta content="Utoo is a daily commute service providing daily travel in Bangalore. I have signed up with Utoo for my daily travel to office. It would be great for me to travel daily with my friends, Please signup on myroute.utoorides.com." property="og:description">
+          <meta content='https://d2zc23renulrga.cloudfront.net/assets/62056/3l5bc28rtf09yw6869e7/utooprofilepic.jpg' property='og:image'>
+          <meta content="Utoo is a daily commute service providing daily travel in Bangalore. I have signed up with Utoo for my daily travel to office. It would be great for me to travel daily with my friends, Please signup on myroute.utoorides.com." name="description">
+                      <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:site" content="@utoorides">
+            <meta name="twitter:title" content="Daily travel to office with Utoo-Your Daily Commute">
+            <meta name="twitter:description" content="Utoo is a daily commute service providing daily travel in Bangalore. I have signed up with Utoo for my daily travel to office. It would be great for me to travel daily with my friends, Please signup on myroute.utoorides.com.">
+            <meta name="twitter:image" content="https://d2zc23renulrga.cloudfront.net/assets/62056/3l5bc28rtf09yw6869e7/utooprofilepic.jpg">
+
+          <meta content="website" property="og:type">
+          <link rel='icon' type='image/vnd.microsoft.icon' href='//d1y0v6ricksqp.cloudfront.net/images/icons/public_sites_favicon.ico'>
+                                <style>
+            img {
+              max-width: 100%;
+            }
+            img.fr-fin{
+              margin: auto;
+              padding: 10px 0;
+              display: block;
+            }
+            img.fr-dib {
+              margin: auto;
+              display: block;
+              float: none;
+              vertical-align: top;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+            img.fr-dib.fr-fil {
+              margin: 5px auto 5px 0;
+              left: 5px;
+            }
+            img.fr-fir{
+              float:right;
+              margin: 10px 3px 10px 10px;
+            }
+            img.fr-dib.fr-fir {
+              margin: 5px 0 5px auto;
+              right: 5px;
+            }
+            img.fr-dii {
+              margin: auto;
+              display: inline-block;
+              float: none;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+            img.fr-dii.fr-fil {
+              margin: 5px 10px 5px 0;
+              left: 5px;
+              float: left;
+            }
+            img.fr-dii.fr-fir {
+              margin: 5px 0 5px 10px;
+              right: 5px;
+              float: right;
+            }
+          </style>
+
+
+
+    
+
+</head>
+	
+<!--Page Layout-->
+
+<body>
+	
+  
+	<header role="banner" class="header text-center">
+		<div class="container">
+      <div class="header-text" data-mercury="froala" data-content-name="header_area_text">
+        <h1>Utoo! Your Daily Commute&nbsp;</h1><p><br></p><p><span style="font-size: 24px;"><span style="color: rgb(250, 197, 28);">Let us know your route to win a weeks free ride to office</span></span></p>
+      </div>
+    </div>
+	</header>
+	
+
+	<main role="main">
+    <div class="main-content">
+  		<div class="container">
+        
+  		<div class="row ">
+
+  			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center signup form-inline">
+
+		
+
+
+                    <form data-page-id="86136" accept-charset="UTF-8" class="signup_form" data-remote="true" id="signup_form" method="post">
+          
+            <header class="form_title signup-text" data-mercury="froala" data-content-name="signup_text">
+              <p>We promise a route to any place in Bangalore</p>
+            </header>
+            <!-- Form -->
+            <div class="form-inline" role="form">
+              
+              
+              
+              <input class="form-control " id="first_name" name="first_name" placeholder="First Name" type="text" data-label-text="first_name" />
+              
+              
+              
+              
+              <input id="email" class="required form-control " type="email" name="email" placeholder="Your BEST email!" data-label-text="Email">
+              
+              
+              
+              
+              <input class="form-control required" id="phone" name="phone" placeholder="Your Phone No" type="text" data-label-text="phone no" />
+              
+              
+              
+              
+              <input class="form-control " id="pickuppoint" name="pickuppoint" placeholder="Your pick up point" type="text" data-label-text="Your pick up point" />
+              
+              
+              
+              
+              <input class="form-control " id="drop_point" name="drop_point" placeholder="Your Drop Point" type="text" data-label-text="Drop Point" />
+              
+              
+              
+              
+              <input class="form-control " id="timing" name="timing" placeholder="Your preferred timing" type="text" data-label-text="Timing" />
+              
+              
+              <button id="submit_button" class="btn btn-primary" name="submit" type="submit">Get me On Board</button>
+            </div>
+            
+          
+            <div style="margin:0;padding:0;display:inline">
+              <input type="hidden" id="__page_id" name="__page_id" value="86136">
+              <input type="hidden" id="__version" name="__version" value="924991">
+              <input type="hidden" id="__xuid" name="__xuid" value="62056">
+              <input type="hidden" id="__kol_api_url" name="__kol_api_url" value="https://api.kickofflabs.com/v1/67144/subscribe">
+            </div>
+          </form>
+
+
+                    <div class="thanks" id="kol_thank_you"></div>
+          <script type="kol/template" id="__response">
+          
+          
+          </script>
+
+  				<div id="kol_fade"></div>
+
+  			</div><!-- end columns -->
+      </div> <!-- end signup row -->
+      
+      <div class="row">
+        <div class="col-md-12 bottom-tagline">
+           <div data-mercury="froala" data-content-name="slogan_text"><h1><span style="color: rgb(250, 197, 28);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;See you soon in your neighborhood<strong>!</strong></span></h1></div>
+			  </div>
+      </div>
+      
+        
+
+
+
+  		
+  		</div>
+		</div> <!--End of main-content -->
+	</main> <!--End of content -->
+	
+  <div class="clearfix"></div>
+	<footer class="footer text-center" role="contentinfo">
+
+		<div class="container">
+			
+			<div class="col-xs-12">
+
+				
+				<!-- START SOCIAL LINKS -->
+				<div class="row">
+					<p class="social_links">
+			           
+			             <a class="facebook" href="https://www.facebook.com/sharer.php?u=http://127.0.0.1:8000/Utoo/{{ route }}/" target="_blank">
+			               <span class="fa-stack fa-large">
+			                 <i class="fa fa-circle fa-stack-2x"></i>
+			                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+			               </span>
+			             </a>
+			           
+			           
+			             <a class="twitter" href="www.twitter.com/utoorides" target="_blank">
+			               <span class="fa-stack fa-large">
+			                 <i class="fa fa-circle fa-stack-2x"></i>
+			                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+			               </span>
+			             </a>
+			           
+			           
+			           
+			           
+			           
+			           
+			           
+			           
+			             <a class="email" href="mailto:utoorides@gmail.com">
+			               <span class="fa-stack fa-large">
+			                 <i class="fa fa-circle fa-stack-2x"></i>
+			                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+			               </span>
+			             </a>
+			           
+			       </p>
+				</div> <!-- /end row -->
+				<!-- /END SOCIAL LINKS -->
+				<br>
+				
+
+				<div data-mercury="froala" data-content-name="copyright_text">
+             		<p>© 2016</p>
+				</div>
+
+       			<p class="text-center"><a id="privacy_link" href="http://myroute.utoorides.com/privacy" >Privacy</a></p>
+
+			</div>
+
+		</div>
+		
+	</footer>
+	
+	<!-- JS -->
+	<script src="https://kickoffpages-kickofflabs.netdna-ssl.com/pages/1.7.0/kol_default_response.js"></script>
+	<script src="https://kickoffpages-kickofflabs.netdna-ssl.com/pages/1.7.0/kol_external_2.js"></script>
+	<script>
+	$(document).ready(function () {
+		new KOLResponse();
+		new KOLValidation();
+	});
+	</script>
+	<script src="//d1y0v6ricksqp.cloudfront.net/js/jquery-libs/fitvid/1.1/jquery.fitvids.js"></script>
+	<script>
+	if (typeof kolInsertFroalaImage === 'undefined')
+	    $(".container, .container-fluid").fitVids();
+	</script>
+	        <script>
+        $(document).ready(function(){
+          analytic_options = {
+            stats_url: "//api.kickofflabs.com", 
+            list_id: 67144, 
+            source: "page.86136", 
+            debug: false, 
+            custom: {page_theme: 'centerimage'}, 
+            click_selector: "a.social_share_link"
+          };
+          
+          window.__kol_analytics = new KOLAnalytics(analytic_options)
+          window.__kol_analytics.track_view()
+          
+          
+        });      
+        </script>
+      
+      
+      
+
+            <script> 
+              function getParameterByName(name){
+                        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+                        var regexS = "[\\?&]" + name + "=([^&#]*)";
+                        var regex = new RegExp(regexS);
+                        var results = regex.exec(window.location.search);
+                        if(results == null)
+                          return "";
+                        else
+                          return decodeURIComponent(results[1].replace(/\+/g, " "));
+                      }
+
+                    $(document).ready(function(){
+                        var email = getParameterByName('_email');
+                        if (email != ""){
+                            $('#email').val(email);
+                            if ($('.required').length < 2)
+                              {$('#signup_form').submit();}
+                        }
+                      });
+              
+             </script>
+
+
+
+
+
+
+
+
+
+
+<script>window.jQuery || document.write('<scr' + 'ipt src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"><\/sc' + 'ript>')</script>
+<script>window.$kol_jquery = window.jQuery</script>
+<script src="https://kickoffpages-kickofflabs.netdna-ssl.com/widgets/1.7.0/kol_bounce.js"></script>
+<script src='https://kickoffpages-kickofflabs.netdna-ssl.com/w/62056/86141.js'></script>
+
+	
+</body>
+
+</html>
+
